@@ -1,38 +1,106 @@
-.App {
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 1px rgb(199, 186, 186);
+  width: 50vw;
+  height: 60vh;
+}
+/* .part1{
+  height: 30%;
+  width: 50vw;
+
+} */
+
+.temp_widget {
+  background-color: grey;
+  display: flex;
+  width: 100%;
+  height: 30%;
+  font-size: medium;
+}
+.text1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 800;
+}
+.search {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: 20px;
+  flex-direction: row;
+}
+.input_field {
+  text-align: center;
+  margin-right: 10px;
+}
+.btn {
+  background-color: rgb(19, 173, 135);
+  color: #fff;
+  padding: 4px;
+  font-size: small;
+  border-radius: 2px;
+  border: none;
+}
+.btn:hover {
+  background-color: rgb(9, 117, 81);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.city_info {
+  font-size: small;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.temps {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.temp_info {
+  background-color: rgb(26, 24, 24);
+  width: 40%;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.weather_mode {
+  width: 60%;
+  font-size: small;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.extra{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 10vh;
 }
+.extraInner{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  height: 15%;
+}
+.extra_icon{
+  color: rgb(9, 185, 118);
+}
+/* .extra_upper{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size:12px;
+  
+}
+ */
